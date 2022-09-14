@@ -103,9 +103,17 @@ header .main-menu .item .item__contents {
   height: 100vh;
   border: 5px solid red;
   background-color: red;
+  
 }
 
+#welcome .slideshow {
+  width: inherit;
+  height: inherit;
+  overflow: hidden;
+} 
 #welcome .slideshow img {
+  width: 1920px; 
+  height: 1080px;
   object-fit: cover;
   object-position: center;
-} 
+}
