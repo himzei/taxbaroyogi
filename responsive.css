@@ -1,0 +1,122 @@
+@media (max-width: 768px) {
+  html {
+    scroll-behavior: smooth;
+  }
+  .cd-section {
+    height: auto;
+  }
+  .cd-section > div {
+    height: auto;
+  }
+  .content {
+    position: static;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Header */
+  header {
+    transition: 0.5s;
+  }
+  header.active {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+  }
+  .menu {
+    display: block;
+  }
+  .slogan {
+    display: none;
+  }
+  .gnb {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: -270px;
+    width: 250px;
+    height: 100vh;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+  }
+  .gnb.active {
+    right: 0;
+  }
+  .menu {
+    margin-top: 80px;
+  }
+  .menu a {
+    line-height: 2em;
+    text-align: right;
+    display: block;
+    padding-right: 20px;
+    color: #000;
+    font-size: 20px;
+  }
+
+  .trigger {
+    display: block;
+    font-size: 36px;
+    position: absolute;
+    right: 14px;
+    top: 20px;
+    width: 24px;
+    height: 14px;
+  }
+  .trigger span {
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #000;
+    transition: 0.4s;
+  }
+  .tirgger span:nth-child(1) {
+    top: 0;
+  }
+  .trigger span:nth-child(2) {
+    top: 50%;
+    width: 80%;
+  }
+  .trigger span:nth-child(3) {
+    top: 100%;
+  }
+  .trigger.active span:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg);
+  }
+  .trigger.active span:nth-child(2) {
+    top: 50%;
+    width: 80%;
+    opacity: 0;
+  }
+  .trigger.active span:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+
+  /* Gototop */
+  .gototop {
+    position: fixed;
+    border: 1px solid #fff;
+    color: #fff;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    bottom: 20px;
+    left: 20px;
+    transform: translateY(30px);
+    transition: 0.4s;
+  }
+  .gototop.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .btn-consulting {
+    right: 20px;
+    bottom: 20px;
+  }
+}
