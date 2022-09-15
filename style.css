@@ -1,3 +1,11 @@
+/* 
+1. F9F7F7
+2. DBE2EF
+3. 3F72AF
+4. 112D4E
+
+
+*/
 /* Common CSS */
 * {
   box-sizing: border-box;
@@ -80,15 +88,12 @@ header {
   position: fixed;
   right: 35px;
   bottom: 40px;
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: blue;
-  border-radius: 50%;
-  overflow: hidden;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  
   transition: 0.5s;
 }
 .btn-consulting:active {
@@ -98,4 +103,28 @@ header {
   width: inherit;
   height: inherit;
   object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+.txtBallon {
+  position: absolute;
+  width: 100%; 
+  height: auto;
+  font-size: 12px;
+  font-weight: 700;
+  top: -14px;
+  text-align: center;
+  background-color: #3F72AF;
+  padding: 4px 6px;
+  border-radius: 5px;
+  color: #eee; 
+}
+.txtBallon::after {
+  content: "";
+  position: absolute; 
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+  bottom: -5px;
+  background-color: #3F72AF;
 }
