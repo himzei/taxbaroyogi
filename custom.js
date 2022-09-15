@@ -19,4 +19,11 @@ $(function () {
       $(".gototop").removeClass("active");
     }
   });
+
+  // typeing
+  $("#typing").typeIt({
+    speed: 200,
+    autoStart: true,
+    breakLines: false,
+  });
 });

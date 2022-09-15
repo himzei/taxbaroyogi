@@ -34,8 +34,15 @@
     <script src="js/velocity/velocity.ui.min.js"></script>
     <script src="js/velocity/main.js"></script>
     <link rel="stylesheet" href="js/velocity/velocity.css" />
+    <!-- GSAP CDN 자바스크립트로 에니메이션 처리 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js" integrity="sha512-GQ5/eIhs41UXpG6fGo4xQBpwSEj9RrBvMuKyE2h/2vw3a9x85T1Bt0JglOUVJJLeyIUl/S/kCdDXlE/n7zCjIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- GSAP : Scroll to Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollToPlugin.min.js" integrity="sha512-TxuhgzYZZCsKL8STS5wmzau5RF3EotX6lAOZPkOJwfy7q9fXMzhlEHfQI4iUuxVMgkbG5XUtzbjshNCKYL+VXw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- TypeIt -->
+    <script src="./js/typeit.min.js"></script>
     <!-- Custom JS & CSS -->
     <script src="custom.js"></script>
+    <script defer src="custom_vanilla.js"></script>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="responsive.css" />
   </head>
@@ -113,19 +120,29 @@
               <a href="#six">portfolio</a>
               <a href="#seven">community</a>
             </div>
-            <div class="slogan">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
-              quo.
+            <div class="slogan" id="typing">
+              대교는 세무사가 직접 찾아가서 세무상담을 진행합니다.<br>
+              수년간의 근무경험으로 최적의 솔루션을 제공합니다.<br>
+              대교의 세법연구는 멈추지 않습니다.
             </div>
           </div>
-          <div class="trigger"><span></span><span></span><span></span></div>
+          <div class="trigger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </header>
     </div>
     <a href="#" class="gototop">
-      <span class="material-icons">arrow_upward</span>
+      <img src="./images/to-top.png" alt="">
+      <div class="percent-wrapper">
+        <div class="material-icons">arrow_upward</div>
+        <span class="scroll-percent">0</span>
+      </div>
     </a>
-    <a href="#" class="btn btn-consulting">
+
+    <a href="http://pf.kakao.com/_gqqxbM/chat" target="_blank" class="btn btn-consulting">
       <img src="./images/profile_small.jpg" alt="상담신청" />
       <div class="txtBallon">세무상담</div>
     </a>
@@ -136,5 +153,6 @@
         <li><a href="#0" class="cd-next">Prev</a></li>
       </ul>
     </nav>
+    
   </body>
 </html>

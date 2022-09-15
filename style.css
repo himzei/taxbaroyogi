@@ -35,7 +35,7 @@ img {
   position: relative;
 }
 .content {
-  background-color: #ddd;
+  background-color: #DBE2EF;
   position: absolute;
   width: calc(100% - 40px);
   height: calc(100% - 80px);
