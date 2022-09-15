@@ -80,13 +80,22 @@ header {
   position: fixed;
   right: 35px;
   bottom: 40px;
-  background-color: #fff;
-  padding: 5px 16px;
-  border-radius: 20px;
-  font-size: 12px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  border-radius: 50%;
+  overflow: hidden;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
   transition: 0.5s;
 }
 .btn-consulting:active {
   transform: scale(0);
+}
+.btn-consulting img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
 }
