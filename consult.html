@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>세무상담신청 - 김종만 세무회계사무소</title>
+    <!-- 파비콘 -->
+    <link rel="icon" href="./favicon.ico" />
+    <!-- reset CSS cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <!-- Google Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- 구글폰트 : 나눔고딕 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="crossorigin"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS & JS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <!-- <script defer src="notice.js"></script> -->
+  </head>
+  <body>
+    <div class="modal">
+      <div class="header">
+        <div class="header-inner">
+          <div class="modal-display">세무상담 신청하기</div>
+          <!-- <div class="material-icons" id="modal-close">close</div> -->
+        </div>
+      </div>
+
+      <div class="consult-form">
+        <div class="consult-inner">
+          <form class="send-box">
+            <div class="formItem">
+              <p class="formTit"><span>프로젝트 종류*</span></p>
+              <div class="formGroup">
+                <div class="formBox">
+                  <input
+                    type="checkbox"
+                    class="required"
+                    title="프로젝트 종류"
+                    name="project_kind[]"
+                    id="project_kind1"
+                    value="브랜드 전략 및 컨설팅"
+                  />
+                  <label for="project_kind1">브랜드 전략 및 컨설팅</label>
+                </div>
+              </div>
+              <div class="formBox">
+                <textarea
+                  title="프로젝트 내용"
+                  name="content"
+                  class="formtagFull"
+                  placeholder="프로젝트 내용"
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="formItem">
+              <p class="formTit"><span>연락처정보</span></p>
+              <div class="formGroup">
+                <div class="formBox">
+                  <input
+                    type="text"
+                    name="company"
+                    placeholder="회사(업체)명"
+                  />
+                </div>
+                <div class="formBox">
+                  <input
+                    type="text"
+                    name="company"
+                    placeholder="담당자 성함(*필수)"
+                  />
+                </div>
+                <div class="formBox">
+                  <input
+                    type="text"
+                    name="company"
+                    placeholder="이메일(*필수)"
+                  />
+                </div>
+                <div class="formBox">
+                  <input type="text" name="company" placeholder="전화번호" />
+                </div>
+              </div>
+            </div>
+
+            <textarea cols="30" rows="10">
+              <h4>개인정보의 수집 및 이용 동의서</h4>
+              <p>이용자가 제공한 모든 정보는 다음의 목적을 위해 활용하며, 하기 목적 이외의 용도로는 사용되지 않습니다.</p>
+            </textarea>
+            <button class="btn-big">전송하기</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

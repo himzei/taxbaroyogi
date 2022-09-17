@@ -53,16 +53,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    
     <!-- SWIPER -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!-- TypeIt -->
     <script src="./js/typeit.min.js"></script>
+    <!-- Featherlight JS -->
+    <script src="js/featherlight/featherlight.js"></script>
+    <link rel="stylesheet" href="js/featherlight/featherlight.css">
     <!-- Custom JS & CSS -->
     <script src="custom.js"></script>
     <script defer src="custom_vanilla.js"></script>
@@ -279,11 +280,11 @@
                     <span>etc</span>
                   </div>
                   <ol class="grid-contents">
-                    <li>1)	각 세목별 세무조사 : 법인세, 소득세, 상속증여세, 양도소득세 등</li>
-                    <li>2)	수정신고 및 경정청구 : 과소(과다)신고 납부세액에 대한 납세자 재산권 보호</li>
-                    <li>3)	조세불복 : 납세자 권익보장을 위한 불복절차 진행</li>
-                    <li>4)	법인전환 및 비상장주식 평가</li>
-                    <li>5)	경리아웃소싱</li>
+                    <li>각 세목별 세무조사 : 법인세, 소득세, 상속증여세, 양도소득세 등</li>
+                    <li>수정신고 및 경정청구 : 과소(과다)신고 납부세액에 대한 납세자 재산권 보호</li>
+                    <li>조세불복 : 납세자 권익보장을 위한 불복절차 진행</li>
+                    <li>법인전환 및 비상장주식 평가</li>
+                    <li>경리아웃소싱</li>
                   </ol>
                 </div>
             </div>
@@ -302,9 +303,11 @@
                   <span>재산세제(상속,증여,양도) 상담 : 시간당 10만원 / 일반상담 : 상담내용에 따라 상이</span>
                 </div>
                 <div class="feature-box">
-                  <div class="box-border">
-                    <div class="btn btn-big">세무상담하기</div>
-                  </div>
+                  <a href="consult.html" data-featherlight="iframe">
+                    <div class="box-border">
+                      <button class="btn-big">세무상담 신청하기</buton>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -329,23 +332,39 @@
                   <div class="emoticon">
                     <span class="material-icons">sentiment_neutral</span>
                   </div>
-                  <div class="item"><a href="https://m.blog.naver.com/leon4876?categoryNo=14" target="_blank">상속세</a></div>
-                  <div class="item"><a href="https://m.blog.naver.com/leon4876?categoryNo=15" target="_blank">증여세</a></div>
-                  <div class="item-white"><a href="https://m.blog.naver.com/leon4876?categoryNo=16" target="_blank">양도소득세</a></div>
-                  <div class="item-white"><a href="https://m.blog.naver.com/leon4876?categoryNo=34" target="_blank">(지방)취득세</a></div>
-                  <div class="item"><a href="https://m.blog.naver.com/leon4876?categoryNo=35" target="_blank">판례 및 예규 해석</a></div>
-                  <div class="item"><a href="https://m.blog.naver.com/leon4876?categoryNo=22" target="_blank">법인세</a></div>
-                  <div class="item"><a href="https://m.blog.naver.com/leon4876?categoryNo=23" target="_blank">소득세</a></div>
+
+                  <a href="https://m.blog.naver.com/leon4876?categoryNo=14" target="_blank">
+                  <div class="item">상속세</div></a>
+
+                  <a href="https://m.blog.naver.com/leon4876?categoryNo=15" target="_blank"><div class="item">증여세</div></a>
+
+                  <a href="https://m.blog.naver.com/leon4876?categoryNo=16" target="_blank">
+                  <div class="item-white">양도소득세</div></a>
+
+                  <a href="https://m.blog.naver.com/leon4876?categoryNo=34" target="_blank"><div class="item-white">(지방)취득세</div></a>
+
+                  <a href="https://m.blog.naver.com/leon4876?categoryNo=35" target="_blank"><div class="item">판례 및 예규 해석</div></a>
+
+                  <a href="https://m.blog.naver.com/leon4876?categoryNo=22" target="_blank"><div class="item">법인세</div></a>
+                  
+                  <a href="https://m.blog.naver.com/leon4876?categoryNo=23" target="_blank"><div class="item">소득세</div></a>
+
                   <div class="emoticon">
                     <span class="material-icons">sentiment_very_satisfied</span>
                   </div>
+                  
                   <div class="emoticon">
                     <span class="material-icons">sentiment_neutral</span>
                   </div>
-                  <div class="item-white"><a href="https://m.blog.naver.com/leon4876?categoryNo=24" target="_blank">부가가치세</a></div>
-                  <div class="item-white"><a href="https://m.blog.naver.com/leon4876?categoryNo=26" target="_blank">재산세</a></div>
-                  <div class="item-white"><a href="https://m.blog.naver.com/leon4876?categoryNo=27" target="_blank">종합부동산세</a></div>
-                  <div class="item"><a href="https://m.blog.naver.com/leon4876?categoryNo=37" target="_blank">홈택스 관련 팁</a></div>
+                  
+                  <a href="https://m.blog.naver.com/leon4876?categoryNo=24" target="_blank"><div class="item-white">부가가치세</div></a>
+                  
+                  
+                  <a href="https://m.blog.naver.com/leon4876?categoryNo=26" target="_blank"><div class="item-white">재산세</div></a>
+                  
+                  <a href="https://m.blog.naver.com/leon4876?categoryNo=27" target="_blank"><div class="item-white">종합부동산세</div></a>
+                  
+                  <a href="https://m.blog.naver.com/leon4876?categoryNo=37" target="_blank"><div class="item">홈택스 관련 팁</div></a>
                  
                 </div>
               </div>
@@ -398,7 +417,7 @@
             <div class="slogan" id="typing">
               세무사가 직접 찾아가서 세무상담을 진행합니다.<br />
               수년간의 근무경험으로 최적의 솔루션을 제공합니다.<br />
-              세법연구는 멈추지 않습니다.
+              JMK의 세법연구는 멈추지 않습니다.
             </div>
           </div>
           <div class="trigger">
@@ -456,18 +475,3 @@
 
 
 
-<!-- <div class="contact-form">
-  <h3><b>Contact</b> us</h3>
-  <p>
-    문의사항이 있으시면 아래의 양식에 맞춰서 보내시면 됩니다.
-  </p>
-  <form class="send-box">
-    <label for="email">이메일<span>*</span></label>
-    <input type="email" />
-    <label for="mobile">모바일<span>*</span></label>
-    <input type="text" />
-    <label for="email">내용<span>*</span></label>
-    <textarea cols="30" rows="6"></textarea>
-    <button>전송하기</button>
-  </form>
-</div> -->
