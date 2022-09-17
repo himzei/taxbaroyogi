@@ -1,10 +1,13 @@
 // header
 const headerShown = document.querySelector("header .gnb-inner");
+const opacityVideo = document.querySelector(".opacity-video video");
+const homeHeading = document.querySelector(".home-heading");
 
 setTimeout(function () {
   headerShown.style.opacity = 1;
   document.querySelector(".btn-consulting").style.opacity = 1;
 }, 3000);
+
 // welcome-video
 const videoPlay = document.querySelector(".opacity-video video");
 setTimeout(function () {
@@ -84,3 +87,10 @@ var marker = new kakao.maps.Marker({
 
 // 마커가 지도 위에 표시되도록 설정합니다
 marker.setMap(map);
+
+// 공지사항 스와이퍼
+new Swiper(".top-notice .swiper", {
+  direction: "vertical",
+  autoplay: true,
+  loop: true,
+});

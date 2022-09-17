@@ -53,6 +53,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    
+    <!-- SWIPER -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!-- TypeIt -->
     <script src="./js/typeit.min.js"></script>
     <!-- Custom JS & CSS -->
@@ -61,9 +69,12 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="responsive.css" />
   </head>
+
+
   <!-- hijacking: on/off - animation: none/scaleDown/rotate/gallery/catch/opacity/fixed/parallax -->
   <body data-hijacking="on" data-animation="rotate">
     <div class="container">
+      <!-- Section Welcome -->
       <section class="cd-section visible" id="home">
         <div>
           <div class="content">
@@ -85,6 +96,7 @@
         </div>
       </section>
 
+      <!-- Section About -->
       <section class="cd-section" id="about">
         <div>
           <div class="content">
@@ -106,10 +118,8 @@
                   <span>
                     <h3>최적의 솔루션 제공</h3>
                     <p>
-                      김종만 세무회계사무소는 다양한 경험을 가진 세명의 세무사가
-                      항상 함께 고민합니다. 수년간의
-                      세무법인/금융기관/외국계기업 근무 경험을 갖춘 세명의
-                      세무사가 절세는 물론 최적의
+                      수년간의
+                      세무법인/금융기관/외국계기업 근무 경험을 갖춘                   세무사가 절세는 물론 최적의
                       재무관리/부동산컨설팅/사업솔루션까지 제공합니다.
                     </p>
                   </span>
@@ -132,6 +142,7 @@
         </div>
       </section>
 
+      <!-- Section Service -->
       <section class="cd-section" id="service">
         <div>
           <div class="content">
@@ -208,67 +219,157 @@
         </div>
       </section>
 
-      <section class="cd-section" id="two">
+      <!-- Section Process -->
+      <section class="cd-section" id="process">
         <div>
           <div class="content">
-            <div class="awards-inner">
-              <div class="awards-about">
-                <div class="awards-heading">
-                  <h2>2022 TAX AWARDS</h2>
-                  <hr class="bar" />
-                  <p></p>
-                  <a href="#none"></a>
+            <div class="process-inner">
+              <div class="process-grid">
+                <div class="grid-item">
+                  <div class="grid-heading">
+                    <h3>상속</h3>
+                    <span>inheritance tax</span>
+                  </div>
+                  <ol class="grid-contents">
+                    <li>최초 미팅 약속 (사전예약_유선, 상담신청)</li>
+                    <li>인터뷰 및 업무의뢰 협의</li>
+                    <li>자료요청 및 사실관계 파악</li>
+                    <li>보고서 제공 및 예상세액 검토</li>
+                    <li>신고 전 최종 보고서 브리핑(사안에 따라 추가 브리핑 有)</li>
+                    <li>상속세 신고 및 납부</li>
+                    <li>세무조사 통지</li>
+                    <li>사전미팅을 통한 대응방안 검토</li>
+                    <li>세무조사 대응 및 착수</li>
+                    <li>상속세 세액 최종 결정 및 종결</li>
+                  </ol>
                 </div>
-              </div>
-              <div class="awards-pic"></div>
+                <div class="grid-item">
+                  <div class="grid-heading">
+                    <h3>증여</h3>
+                    <span>gift tax</span>
+                  </div>
+                  <ol class="grid-contents">
+                    <li> 	최초 미팅 약속 (사전예약_유선, 상담신청)</li>
+                    <li>	인터뷰 및 업무의뢰 협의</li>
+                    <li>	자료 요청 및 신고방안 검토</li>
+                    <li>	보고서 제공 및 예상세액 검토 (사안에 따라 생략 가능)</li>
+                    <li>	증여세 신고 내용 사전 브리핑</li>
+                    <li>	신고 및 납부서 전달</li>
+                    <li>	세무조사 통지 및 대응</li>
+                    <li>	증여세 세액 최종 결정 및 종결</li>
+                  </ol>
+                </div>
+                <div class="grid-item">
+                  <div class="grid-heading">
+                    <h3>양도</h3>
+                    <span>transfer tax</span>
+                  </div>
+                  <ol class="grid-contents">
+                    <li>	최초 미팅 약속 (사전예약_유선, 상담신청)</li>
+                    <li>	인터뷰 및 업무 의뢰</li>
+                    <li>	자료 요청 및 사실관계 파악 (사실관계 중요)</li>
+                    <li>	관련 법령 검토 (사안에 따라 검토시간 상이)</li>
+                    <li>	양도소득세 신고 내용 사전 브리핑 (사안에 따라 보고서 제공)</li>                  
+                    <li>	신고 및 납부서 전달</li>
+                  </ol>
+                </div>
+                <div class="grid-item">
+                  <div class="grid-heading">
+                    <h3>그외 세금</h3>
+                    <span>etc</span>
+                  </div>
+                  <ol class="grid-contents">
+                    <li>1)	각 세목별 세무조사 : 법인세, 소득세, 상속증여세, 양도소득세 등</li>
+                    <li>2)	수정신고 및 경정청구 : 과소(과다)신고 납부세액에 대한 납세자 재산권 보호</li>
+                    <li>3)	조세불복 : 납세자 권익보장을 위한 불복절차 진행</li>
+                    <li>4)	법인전환 및 비상장주식 평가</li>
+                    <li>5)	경리아웃소싱</li>
+                  </ol>
+                </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="cd-section" id="five">
+      <!-- Section Fare -->
+      <section class="cd-section" id="fare">
         <div>
           <div class="content">
-            <h2>5</h2>
+            <div class="fare-inner">
+              <div class="fare-feature">
+                <div class="feature-heading">
+                  <h3>비용안내 & 상담접수</h3>
+                  <span>재산세제(상속,증여,양도) 상담 : 시간당 10만원 / 일반상담 : 상담내용에 따라 상이</span>
+                </div>
+                <div class="feature-box">
+                  <div class="box-border">
+                    <div class="btn btn-big">세무상담하기</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="cd-section" id="six">
+      <!-- Section Keyowrd -->
+      <section class="cd-section" id="keyword">
         <div>
           <div class="content">
-            <h2>6</h2>
+            <div class="keyword-inner">
+              <div class="keyword-feature">
+                <div class="keyword-heading">
+                  <h3>JMK Keyword</h3>
+                  <span>관심있는 분야의 키워드로 확인하세요</span>
+                </div>
+                <div class="keyword-wrap">
+                  <div class="emoticon">
+                    <span class="material-icons">sentiment_very_satisfied</span>
+                  </div>
+                  <div class="emoticon">
+                    <span class="material-icons">sentiment_neutral</span>
+                  </div>
+                  <div class="item"><a href="https://m.blog.naver.com/leon4876?categoryNo=14" target="_blank">상속세</a></div>
+                  <div class="item"><a href="https://m.blog.naver.com/leon4876?categoryNo=15" target="_blank">증여세</a></div>
+                  <div class="item-white"><a href="https://m.blog.naver.com/leon4876?categoryNo=16" target="_blank">양도소득세</a></div>
+                  <div class="item-white"><a href="https://m.blog.naver.com/leon4876?categoryNo=34" target="_blank">(지방)취득세</a></div>
+                  <div class="item"><a href="https://m.blog.naver.com/leon4876?categoryNo=35" target="_blank">판례 및 예규 해석</a></div>
+                  <div class="item"><a href="https://m.blog.naver.com/leon4876?categoryNo=22" target="_blank">법인세</a></div>
+                  <div class="item"><a href="https://m.blog.naver.com/leon4876?categoryNo=23" target="_blank">소득세</a></div>
+                  <div class="emoticon">
+                    <span class="material-icons">sentiment_very_satisfied</span>
+                  </div>
+                  <div class="emoticon">
+                    <span class="material-icons">sentiment_neutral</span>
+                  </div>
+                  <div class="item-white"><a href="https://m.blog.naver.com/leon4876?categoryNo=24" target="_blank">부가가치세</a></div>
+                  <div class="item-white"><a href="https://m.blog.naver.com/leon4876?categoryNo=26" target="_blank">재산세</a></div>
+                  <div class="item-white"><a href="https://m.blog.naver.com/leon4876?categoryNo=27" target="_blank">종합부동산세</a></div>
+                  <div class="item"><a href="https://m.blog.naver.com/leon4876?categoryNo=37" target="_blank">홈택스 관련 팁</a></div>
+                 
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
+      <!-- Section Contact -->
       <section class="cd-section" id="contact">
         <div>
           <div class="content">
             <div class="contact-inner">
               <div class="contact-feature">
-                <div class="contact-form">
-                  <h3><b>Contact</b> us</h3>
-                  <p>
-                    문의사항이 있으시면 아래의 양식에 맞춰서 보내시면 됩니다.
-                  </p>
-                  <form class="send-box">
-                    <label for="email">이메일<span>*</span></label>
-                    <input type="email" />
-                    <label for="mobile">모바일<span>*</span></label>
-                    <input type="text" />
-                    <label for="email">내용<span>*</span></label>
-                    <textarea cols="30" rows="6"></textarea>
-                    <button>전송하기</button>
-                  </form>
-                </div>
                 <div class="contact-map">
-                  <h4>Our <b>office</b></h4>
-                  <ul>
-                    <li><b>주소</b> 서울 강서구 마곡중앙6로 42 622호</li>
-                    <!-- <li><b>전화번호</b> 010-9353-4876</li>
-                    <li><b>이메일</b> leon4876@naver.com</li> -->
-                  </ul>
+                  <h4>Contact Our <b>Office</b></h4>
+                  <div class="contact-info">
+                    <b class="material-icons">home</b>
+                    <span> 서울 강서구 마곡중앙6로 42 622호</span>
+                    <b class="material-icons">call</b>
+                    <span>010-9353-4876</span>
+                    <b class="material-icons">email</b>
+                    <span>leon4876@naver.com</span>
+                  </div>
                   <div id="map"></div>
                 </div>
               </div>
@@ -277,6 +378,7 @@
         </div>
       </section>
 
+      <!-- Section Header -->
       <header>
         <div class="gnb-inner">
           <div class="logo">
@@ -292,6 +394,7 @@
               <a href="#six">portfolio</a>
               <a href="#seven">Contact</a>
             </div>
+            
             <div class="slogan" id="typing">
               세무사가 직접 찾아가서 세무상담을 진행합니다.<br />
               수년간의 근무경험으로 최적의 솔루션을 제공합니다.<br />
@@ -303,6 +406,22 @@
             <span></span>
             <span></span>
           </div>
+          <div class="top-notice">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#none">[공지]김종만 세무회계사무소 홈페이지 완성</a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#none">[공지]오픈기념 세무조정료 파격할인</a>
+                </div>
+                
+              </div>
+            </div>
+            <a href="#none" class="notice-line__more">
+              <div class="material-icons">add_circle</div>
+            </a>
+          </div>
         </div>
       </header>
     </div>
@@ -313,7 +432,6 @@
         <span class="scroll-percent">0</span>
       </div>
     </a>
-
     <a
       href="http://pf.kakao.com/_gqqxbM/chat"
       target="_blank"
@@ -322,7 +440,6 @@
       <img src="./images/profile_small.jpg" alt="상담신청" />
       <div class="txtBallon">세무상담</div>
     </a>
-
     <nav>
       <ul class="cd-vertical-nav">
         <li><a href="#0" class="cd-prev inactive">Next</a></li>
@@ -331,3 +448,26 @@
     </nav>
   </body>
 </html>
+
+
+
+
+
+
+
+
+<!-- <div class="contact-form">
+  <h3><b>Contact</b> us</h3>
+  <p>
+    문의사항이 있으시면 아래의 양식에 맞춰서 보내시면 됩니다.
+  </p>
+  <form class="send-box">
+    <label for="email">이메일<span>*</span></label>
+    <input type="email" />
+    <label for="mobile">모바일<span>*</span></label>
+    <input type="text" />
+    <label for="email">내용<span>*</span></label>
+    <textarea cols="30" rows="6"></textarea>
+    <button>전송하기</button>
+  </form>
+</div> -->
