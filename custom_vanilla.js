@@ -1,3 +1,16 @@
+// header
+const headerShown = document.querySelector("header .gnb-inner");
+
+setTimeout(function () {
+  headerShown.style.opacity = 1;
+  document.querySelector(".btn-consulting").style.opacity = 1;
+}, 3000);
+// welcome-video
+const videoPlay = document.querySelector(".opacity-video video");
+setTimeout(function () {
+  videoPlay.play();
+}, 4000);
+
 // to-Top
 const text = document.querySelector(".gototop .scroll-percent");
 const badge = document.querySelector(".gototop img");
