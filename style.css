@@ -929,11 +929,36 @@ textarea::placeholder {
 }
 .main-inner {
   width: 90%;
+  position: relative;
 }
 .noticeTitle {
   text-align: center;
   font-weight: 700;
   font-size: 32px;
+}
+.adminLogin {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 400;
+  background-color: #aaa;
+  padding: 4px 8px;
+  color: white;
+  border-radius: 4px;
+}
+.adminWrite {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 400;
+  background-color: #aaa;
+  padding: 4px 8px;
+  color: white;
+  border-radius: 4px;
 }
 .noticeText {
   text-align: center;
@@ -1066,4 +1091,39 @@ textarea::placeholder {
   object-fit: cover;
   object-position: center;
   width: 100%;
+}
+
+/* Sub Page Admin Write */
+.write-form .write-inner .formGroup {
+  display: flex;
+  flex-direction: column;
+}
+.write-inner textarea {
+  height: 300px;
+}
+.fileBox {
+  position: relative;
+}
+.fileBox .upload-name {
+  padding: 10px 6px;
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  color: #9fa0a0;
+  outline: 0;
+
+  display: inline-block;
+  width: 92%;
+}
+.fileBox label {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 20px;
+  color: #fff;
+  width: 150px;
+  background-color: #444;
+  cursor: pointer;
+}
+.fileBox input[type="file"] {
+  display: none;
 }

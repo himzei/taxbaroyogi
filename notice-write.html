@@ -48,42 +48,48 @@
           <a href="notice-write.html"
             ><div class="adminWrite">관리자글쓰기</div></a
           >
-          <div class="boardList">
-            <ul>
-              <li>
-                <a href="notice-detail.html">
-                  <div class="date">2021.11.08</div>
-                  <p class="subject">
-                    [공지] 영상팀 신입·경력직 상시채용 (00명)
-                  </p>
-                  <div class="imgBox">
-                    <img src="./images/service-bg.jpg" alt="" class="bg bga" />
+          <div class="write-form">
+            <div class="write-inner">
+              <form action="" class="send-box">
+                <div class="formItem">
+                  <div class="formGroup">
+                    <div class="formBox">
+                      <input type="text" name="title" placeholder="제목" />
+                    </div>
+                    <div class="formBox">
+                      <input type="text" name="url" placeholder="참조URL" />
+                    </div>
+                    <div class="formBox fileBox">
+                      <input
+                        class="upload-name"
+                        value="첨부파일"
+                        placeholder="첨부파일"
+                      />
+                      <input
+                        type="file"
+                        name="file"
+                        id="file"
+                        placeholder="그림파일"
+                      />
+                      <label for="file">파일찾기</label>
+                    </div>
+                    <div class="formBox">
+                      <textarea
+                        title="프로젝트 내용"
+                        name="content"
+                        class="formtagFull"
+                        placeholder="세무상담 문의하기"
+                      ></textarea>
+                    </div>
+                    <div class="formBtn">
+                      <button type="button" class="btn btn-big">
+                        공지사항 글쓰기
+                      </button>
+                    </div>
                   </div>
-                </a>
-              </li>
-              <li>
-                <a href="notice-detail.html">
-                  <div class="date">2021.11.08</div>
-                  <p class="subject">
-                    [공지] 영상팀 신입·경력직 상시채용 (00명)
-                  </p>
-                  <div class="imgBox">
-                    <img src="./images/service-bg.jpg" alt="" class="bg bga" />
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="notice-detail.html">
-                  <div class="date">2021.11.08</div>
-                  <p class="subject">
-                    [공지] 영상팀 신입·경력직 상시채용 (00명)
-                  </p>
-                  <div class="imgBox">
-                    <img src="./images/service-bg.jpg" alt="" class="bg bga" />
-                  </div>
-                </a>
-              </li>
-            </ul>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
