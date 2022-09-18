@@ -6,7 +6,7 @@ const homeHeading = document.querySelector(".home-heading");
 setTimeout(function () {
   headerShown.style.opacity = 1;
   document.querySelector(".btn-consulting").style.opacity = 1;
-}, 3000);
+}, 2000);
 
 // welcome-video
 const videoPlay = document.querySelector(".opacity-video video");

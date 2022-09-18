@@ -38,7 +38,6 @@
       <div class="header">
         <div class="header-inner">
           <div class="modal-display">세무상담 신청하기</div>
-          <!-- <div class="material-icons" id="modal-close">close</div> -->
         </div>
       </div>
 
@@ -46,18 +45,97 @@
         <div class="consult-inner">
           <form class="send-box">
             <div class="formItem">
-              <p class="formTit"><span>프로젝트 종류*</span></p>
+              <p class="formTit">관심분야 선택</p>
               <div class="formGroup">
                 <div class="formBox">
                   <input
                     type="checkbox"
-                    class="required"
-                    title="프로젝트 종류"
                     name="project_kind[]"
                     id="project_kind1"
-                    value="브랜드 전략 및 컨설팅"
+                    value="상속세"
                   />
-                  <label for="project_kind1">브랜드 전략 및 컨설팅</label>
+                  <label for="project_kind1">상속세</label>
+                </div>
+                <div class="formBox">
+                  <input
+                    type="checkbox"
+                    name="project_kind[]"
+                    id="project_kind2"
+                    value="증여세"
+                  />
+                  <label for="project_kind2">증여세</label>
+                </div>
+                <div class="formBox">
+                  <input
+                    type="checkbox"
+                    name="project_kind[]"
+                    id="project_kind3"
+                    value="양도소득세"
+                  />
+                  <label for="project_kind3">양도소득세</label>
+                </div>
+                <div class="formBox">
+                  <input
+                    type="checkbox"
+                    name="project_kind[]"
+                    id="project_kind4"
+                    value="(지방)취득세"
+                  />
+                  <label for="project_kind4">(지방)취득세</label>
+                </div>
+                <div class="formBox">
+                  <input
+                    type="checkbox"
+                    name="project_kind[]"
+                    id="project_kind5"
+                    value="법인세"
+                  />
+                  <label for="project_kind5">법인세</label>
+                </div>
+                <div class="formBox">
+                  <input
+                    type="checkbox"
+                    name="project_kind[]"
+                    id="project_kind6"
+                    value="소득세"
+                  />
+                  <label for="project_kind6">소득세</label>
+                </div>
+                <div class="formBox">
+                  <input
+                    type="checkbox"
+                    name="project_kind[]"
+                    id="project_kind7"
+                    value="부가가치세"
+                  />
+                  <label for="project_kind7">부가가치세</label>
+                </div>
+                <div class="formBox">
+                  <input
+                    type="checkbox"
+                    name="project_kind[]"
+                    id="project_kind8"
+                    value="재산세"
+                  />
+                  <label for="project_kind8">재산세</label>
+                </div>
+                <div class="formBox">
+                  <input
+                    type="checkbox"
+                    name="project_kind[]"
+                    id="project_kind9"
+                    value="종합부동산세"
+                  />
+                  <label for="project_kind9">종합부동산세</label>
+                </div>
+                <div class="formBox">
+                  <input
+                    type="checkbox"
+                    name="project_kind[]"
+                    id="project_kind10"
+                    value="기타"
+                  />
+                  <label for="project_kind10">기타</label>
                 </div>
               </div>
               <div class="formBox">
@@ -65,13 +143,13 @@
                   title="프로젝트 내용"
                   name="content"
                   class="formtagFull"
-                  placeholder="프로젝트 내용"
+                  placeholder="세무상담 문의하기"
                 ></textarea>
               </div>
             </div>
 
             <div class="formItem">
-              <p class="formTit"><span>연락처정보</span></p>
+              <p class="formTit">연락처 정보*</p>
               <div class="formGroup">
                 <div class="formBox">
                   <input
@@ -83,29 +161,87 @@
                 <div class="formBox">
                   <input
                     type="text"
-                    name="company"
+                    name="name"
                     placeholder="담당자 성함(*필수)"
                   />
                 </div>
                 <div class="formBox">
-                  <input
-                    type="text"
-                    name="company"
-                    placeholder="이메일(*필수)"
-                  />
+                  <input type="text" name="email" placeholder="이메일(*필수)" />
                 </div>
                 <div class="formBox">
-                  <input type="text" name="company" placeholder="전화번호" />
+                  <input type="text" name="phoen" placeholder="전화번호" />
                 </div>
+              </div>
+              <div class="formBox">
+                <div class="agreeBox mgt10">
+                  <h4>개인정보의 수집 및 이용 동의서</h4>
+                  <p>
+                    이용자가 제공한 모든 정보는 다음의 목적을 위해 활용하며,
+                    하기 목적 이외의 용도로는 사용되지 않습니다.
+                  </p>
+                  <ol>
+                    <li>
+                      ① 개인정보 수집 항목 및 수집·이용 목적
+                      <ol>
+                        <li>가) 수집 항목 (필수항목) : 이름, 연락처</li>
+                        <li>나) 수집 및 이용 목적 : 온라인 문의</li>
+                      </ol>
+                    </li>
+                    <li>
+                      ② 개인정보 보유 및 이용기간
+                      <ol>
+                        <li>
+                          수집·이용 동의일로부터 개인정보의 수집·이용목적을
+                          달성할 때까지
+                        </li>
+                      </ol>
+                    </li>
+                    <li>
+                      ③ 동의거부관리
+                      <ol>
+                        <li>
+                          귀하께서는 본 안내에 따른 개인정보 수집, 이용에 대하여
+                          동의를 거부하실 권리가 있습니다. 다만, 귀하가
+                          개인정보의 수집/이용에 동의를 거부하시는 경우에
+                          온라인문의를 이용함에 있어 불이익이 발생할 수있음을
+                          알려드립니다.
+                        </li>
+                      </ol>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+              <div class="formBox">
+                <input
+                  type="checkbox"
+                  name="agree"
+                  id="agree"
+                  value="양도소득세"
+                />
+                <label for="agree">개인정보 수집 및 이용에 동의합니다.</label>
               </div>
             </div>
 
-            <textarea cols="30" rows="10">
-              <h4>개인정보의 수집 및 이용 동의서</h4>
-              <p>이용자가 제공한 모든 정보는 다음의 목적을 위해 활용하며, 하기 목적 이외의 용도로는 사용되지 않습니다.</p>
-            </textarea>
-            <button class="btn-big">전송하기</button>
+            <div class="formBtn">
+              <button type="button" class="btn btn-big">
+                세무상담 문의하기
+              </button>
+            </div>
           </form>
+        </div>
+      </div>
+
+      <div class="noticeTail">
+        <div class="tail-inner">
+          <div>
+            <h3>Contact</h3>
+            <span>전화번호 010-9353-4876 | 이메일 : leon4876@naver.com</span>
+          </div>
+          <div>
+            <h3>김종만 세무회계사무소</h3>
+            <span>서울 강서구 마곡중앙6로 42 622호</span>
+            <span>대표자 : 김종만 | 사업자등록번호 : 123-45-67890</span>
+          </div>
         </div>
       </div>
     </div>

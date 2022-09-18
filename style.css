@@ -1,11 +1,5 @@
-/* 
-1. F9F7F7
-2. DBE2EF
-3. 3F72AF
-4. 112D4E
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap");
 
-
-*/
 /* Common CSS */
 * {
   box-sizing: border-box;
@@ -346,6 +340,7 @@ header {
   background: url("images/service-bg.jpg") no-repeat center center;
   background-size: cover;
   height: 100%;
+  position: relative;
 }
 .service-inner::before {
   content: "";
@@ -353,6 +348,8 @@ header {
   width: 100%;
   height: 100%;
   position: absolute;
+  top: 0;
+  left: 0;
 }
 .feature {
   width: 70%;
@@ -666,12 +663,14 @@ header {
   align-items: center;
   margin-bottom: 20px;
 }
-.contact-info span {
-  display: block;
-  margin: 4px 15px 4px 4px;
+.contact-info .material-icons {
+  transform: translateY(7px);
 }
-.contact-info b {
-  font-size: 16px;
+.contact-info span {
+  display: inline-block;
+}
+.contact-info div {
+  margin-right: 20px;
 }
 #map {
   width: 100%;
@@ -735,16 +734,18 @@ header {
   height: 100%;
 }
 
-/* #################### Sub Page #################### */
+/* #################### Sub Page Consult thml #################### */
 .modal {
   width: 100%;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .header {
   position: fixed;
   width: 100%;
   height: 50px;
   z-index: 10;
+  background-color: #fff;
 }
 .header-inner {
   width: 90%;
@@ -760,14 +761,9 @@ header {
   text-transform: uppercase;
   font-weight: bold;
 }
-.header-inner .material-icons {
-  font-size: 32px;
-  cursor: pointer;
-}
 
 .consult-form {
-  position: relative;
-  padding-top: 90px;
+  padding: 90px 0;
   width: 100%;
   height: 100%;
   display: flex;
@@ -779,7 +775,6 @@ header {
   flex-direction: column;
 }
 .formItem {
-  color: #9fa0a0;
   font-size: 14px;
   margin-bottom: 30px;
 }
@@ -792,14 +787,21 @@ header {
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
 }
+.formItem:first-child .formGroup .formBox:nth-child(10) {
+  grid-column: 2 / 4;
+}
+
 .formItem:nth-child(2) .formGroup {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
 }
 .formBox {
+  width: 100%;
   position: relative;
+  display: flex;
 }
+
 input[type="checkbox"] {
   position: absolute;
   width: 1px;
@@ -830,7 +832,6 @@ input[type="checkbox"] + label:before {
   border: 1px solid #cacece;
   border-radius: 5px;
   box-shadow: none;
-
   cursor: pointer;
 }
 input[type="checkbox"]:checked + label:before {
@@ -841,15 +842,6 @@ input[type="checkbox"]:checked + label:before {
   background: url(/images/icon-checkbox.png) #fff 100% no-repeat;
   background-size: cover;
 }
-/* input[type="checkbox"] + label:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-  background-position: left;
-} */
 
 textarea {
   margin-top: 20px;
@@ -863,79 +855,215 @@ textarea {
   color: #888;
   line-height: 1.5;
   outline: none;
-  resize: n;
+  resize: none;
 }
 textarea:focus {
   border: 1px solid #999;
 }
-
+.agreeBox {
+  height: 200px;
+  overflow-y: scroll;
+  padding: 15px;
+  font-size: 14px;
+  border: 1px solid #d4d4d4;
+  border-radius: 3px;
+  color: #888;
+  margin: 14px 0;
+}
+.agreeBox > h4 {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.agreeBox p {
+  margin: 0;
+  padding: 10px 0;
+  font-weight: normal;
+}
+.agreeBox ol {
+  list-style-position: inside;
+  margin-left: 10px;
+}
+.agreeBox > ol > li {
+  margin-bottom: 10px;
+}
+.formItem:nth-child(2) textarea {
+  height: 100px;
+  margin-bottom: 15px;
+}
 .formBox input {
   padding: 10px 6px;
   width: 100%;
-  /* font-size: 12px; */
   border-radius: 3px;
   border: 1px solid #ddd;
   color: #9fa0a0;
   outline: 0;
-  /* outline: #112d4e solid 1px; */
 }
 .formBox input:focus {
   border: 1px solid #999;
 }
-input::placeholder,
-textarea::placeholder {
+input::placeholder {
   color: #aaa;
   font-size: 12px;
 }
+textarea::placeholder {
+  color: #888;
+  font-size: 12px;
+}
+.formBtn {
+  text-align: center;
+}
+.btn {
+  margin: 40px 0;
+  text-align: center;
+  border-radius: 5px;
+}
 
-/* 
-.send-box {
+/* #################### Sub Page Notice-list #################### */
+.section-main {
+  margin: 80px 0;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  color: #888;
 }
-.send-box label {
-  display: block;
-  margin: 8px 0;
+.main-inner {
+  width: 90%;
+}
+.noticeTitle {
+  text-align: center;
+  font-weight: 700;
+  font-size: 32px;
+}
+.noticeText {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.boardList {
+  border-top: 1px solid #ddd;
+}
+.boardList ul {
+}
+.boardList ul li {
+  border-bottom: 1px solid #ddd;
+  padding: 18px 0;
+}
+.boardList ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #888;
   font-size: 14px;
-  color: #9fa0a0;
 }
-.send-box label span {
-  color: crimson;
-  font-weight: normal;
+.boardList .date {
+  width: 180px;
+  height: auto;
+  padding-left: 10px;
 }
-.send-box input {
-  border: 1px solid #ccc;
-  padding: 6px 10px;
-  border-radius: 3px;
-  outline: none;
+.boardList .subject {
+  /* background-color: red; */
   width: 100%;
 }
-.send-box input:hover,
-.send-box textarea:hover,
-.send-box input:focus,
-.send-box textarea:focus {
-  border: 1px solid #3f72af;
-  box-shadow: 0 0 3px #3f72af;
-  background-color: #dbe2ef;
+.boardList .imgBox {
+  width: 260px;
 }
-.send-box textarea {
-  border: 1px solid #ccc;
-  padding: 6px 10px;
+.boardList .imgBox img {
+  width: 240px;
+  height: 100px;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.noticeTail {
+  border-top: 1px solid #ddd;
+  padding: 40px 0;
+}
+.tail-inner {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+.tail-inner div:first-child,
+.tail-inner div:nth-child(2) {
+  margin-bottom: 20px;
+}
+.tail-inner h3 {
+  font-weight: 600;
+  font-size: 14px;
+}
+.tail-inner span {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* Sub Page Notice Detail  */
+.board {
+  padding: 20px 0;
+  border-top: 1px solid #1a3571;
+  border-bottom: 1px solid #1a3571;
+}
+.boardView {
+  padding: 20px;
+}
+.boardView .iconNote {
+  background-color: #888;
+  width: 40px;
+  height: 18px;
+  color: #fff;
   border-radius: 3px;
-  outline: none;
+  padding: 2px 4px;
+  font-size: 12px;
+}
+.boardView .titNote {
+  font-weight: 600;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 14px;
+}
+.boardView ul {
+  display: flex;
+  color: #888;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.boardView ul li {
+  margin-right: 20px;
+  position: relative;
+}
+.boardview ul li:first-child::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 16px;
+  background-color: #bbb;
+  right: -10px;
+  top: 4px;
+}
+.boardView ul li .blind {
+  display: none;
+}
+.boardView hr {
+  margin: 40px 0;
+}
+.boardView .boardFootBtn {
+  text-align: right;
+}
+.btnList {
+  color: #fff;
+  background-color: #444;
+  border-color: #444;
+  padding: 15px 30px;
+}
+.btnList:hover {
+  background-color: #999;
+}
+.viewDetail {
+  margin: 40px 0 20px 0;
+}
+
+.viewDetail img {
+  object-fit: cover;
+  object-position: center;
   width: 100%;
 }
-.send-box button {
-  background-color: #3f72af;
-  color: #dbe2ef;
-  padding: 8px 16px;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-  transition: 0.5s;
-  margin-top: 10px;
-}
-.send-box button:hover {
-  background-color: #112d4e;
-  font-weight: bold;
-} */

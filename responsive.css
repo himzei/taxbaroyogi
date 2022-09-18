@@ -1,6 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap");
+
 @media (max-width: 768px) {
+  /* Entire Layout */
   html {
     scroll-behavior: smooth;
+    font-family: "Noto Sans KR", sans-serif;
   }
   .cd-section {
     height: auto;
@@ -38,10 +42,14 @@
     height: 100vh;
     box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
     transition: 0.5s;
-    
   }
   .gnb.active {
     right: 0;
+  }
+  .gnb-inner {
+    width: 100%;
+    padding-left: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
   }
   .menu {
     margin-top: 80px;
@@ -54,7 +62,6 @@
     color: #000;
     font-size: 20px;
   }
-
   .trigger {
     display: block;
     font-size: 36px;
@@ -71,6 +78,7 @@
     background-color: #000;
     transition: 0.4s;
   }
+
   .tirgger span:nth-child(1) {
     top: 0;
   }
@@ -81,6 +89,7 @@
   .trigger span:nth-child(3) {
     top: 100%;
   }
+
   .trigger.active span:nth-child(1) {
     top: 50%;
     transform: rotate(45deg);
@@ -120,11 +129,11 @@
     height: inherit;
   }
   .gototop > .percent-wrapper {
-    position: absolute; 
+    position: absolute;
     width: 100%;
     top: 35%;
     left: 2px;
-    display: flex; 
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -140,5 +149,171 @@
   .btn-consulting {
     right: 20px;
     bottom: 20px;
+  }
+
+  .cd-vertical-nav {
+    display: none;
+  }
+
+  /* Shot Hide Section */
+  /* #home, */
+  /* #about, */
+  /* #service, */
+  /* #process, */
+  /* #fare, */
+  /* #keyword, */
+  /* #contact, */
+  .gnb-inner .top-notice {
+    display: none;
+  }
+
+  /* Section Home */
+  .home-inner {
+    height: 100vh;
+  }
+  .welcome-text > img {
+    transform: scale(0.8);
+  }
+  .home-heading {
+    left: 20px;
+    top: 30%;
+  }
+  .home-heading span {
+    font-size: 14px;
+  }
+  .home-heading span:first-child {
+    font-size: 30px;
+  }
+
+  /* Section : about */
+  .about-inner {
+    height: auto;
+    padding: 20px;
+    background: #112d4e;
+  }
+  .about-items {
+    width: 100%;
+    position: static;
+    margin-left: 0;
+    transform: none;
+    text-align: center;
+  }
+  .item {
+    margin: 40px 0;
+  }
+  .item .material-icons {
+    float: none;
+  }
+
+  /* Section service */
+  .service-inner {
+    height: auto;
+    padding: 40px 20px;
+    position: static;
+  }
+  .feature {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+  .office {
+    grid-template-columns: 1fr;
+  }
+
+  /* Section Process */
+  .process-inner {
+    height: auto;
+  }
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+  .grid-item .grid-heading {
+    margin-bottom: 50px;
+  }
+  .grid-heading h3 {
+    font-size: 24px;
+  }
+
+  /* Section Fare */
+  .fare-inner {
+    height: auto;
+    padding: 20px;
+  }
+  .fare-feature {
+    width: 100%;
+    position: static;
+    transform: none;
+  }
+  .feature-heading h3 {
+    font-size: 24px;
+  }
+  .feature-heading span {
+    text-align: center;
+  }
+  .feature-box::before {
+    display: none;
+  }
+  .feature-box::after {
+    display: none;
+  }
+
+  /* Section Keyword */
+  .keyword-inner {
+    height: auto;
+    padding: 20px;
+  }
+  .keyword-feature {
+    width: 100%;
+    position: static;
+    transform: none;
+  }
+  .keyword-heading h3 {
+    font-size: 24px;
+  }
+
+  /* Section Contact */
+  .contact-inner {
+    height: auto;
+    padding: 20px;
+  }
+  .contact-feature {
+    position: static;
+    transform: none;
+    width: 100%;
+  }
+
+  .contact-map h4 {
+    font-size: 24px;
+  }
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+  }
+  #map {
+    width: 80%;
+    height: 400px;
+  }
+
+  /* Cunsult html CSS */
+  .formItem:first-child .formGroup {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .formItem:nth-child(2) .formGroup {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* Notice List Html */
+  .boardList .date {
+    width: 140px;
+  }
+  .boardList ul li {
+    padding: 8px 0;
+  }
+  .boardList .imgBox {
+    display: none;
+  }
+  .boardList .imgBox img {
   }
 }

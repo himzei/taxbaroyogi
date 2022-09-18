@@ -14,9 +14,13 @@ $(function () {
     if ($(window).scrollTop() > 50) {
       $("header").addClass("active");
       $(".gototop").addClass("active");
+      // $(".trigger span").css("background-color", "#000");
+      // $("#main-logo").attr("src", "./images/logo.png");
     } else {
       $("header").removeClass("active");
       $(".gototop").removeClass("active");
+      // $(".trigger span").css("background-color", "#fff");
+      // $("#main-logo").attr("src", "./images/logo_white.png");
     }
   });
 
